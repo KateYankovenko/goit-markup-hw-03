@@ -12,6 +12,16 @@
   --second-section-color: #f5f4fa;
   --ftr-cnt-color: rgba(255, 255, 255, 0.6);
 }
+/* border-boxing */
+html {
+  box-sizing: border-box;
+}
+/* inheritance for the wholw body */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 /* features for the whole documents body */
 body {
   background-color: #ffffff;
@@ -19,7 +29,17 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+/* main container features */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid red;
+}
+/* common style for all lists */
 .list {
+  padding: 0px;
+  margin: 0px;
   list-style: none;
 }
 /* logo */
@@ -81,6 +101,13 @@ body {
 }
 /* Buttons */
 .button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  min-height: 50px;
+  margin-bottom: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--section-text-color);
   background: var(--accent-color);
   font-family: inherit;
@@ -88,6 +115,7 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  text-align: center;
   cursor: pointer;
 }
 .button:hover,
@@ -96,6 +124,7 @@ body {
   background: var(--button-hover-color);
   box-shadow: var(--shadow-color);
 }
+/* portfolio buttons */
 .filter-button {
   background: var(--filter-button-color);
   color: inherit;
@@ -104,7 +133,35 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  padding: 6px 22px;
+  border-radius: 4px;
   cursor: pointer;
+}
+/* all filter-buttons one by one */
+.filter-button first {
+  display: inline-block;
+  min-width: 73px;
+  min-height: 38px;
+}
+.filter-button second {
+  display: inline-block;
+  min-width: 128px;
+  min-height: 38px;
+}
+.filter-button third {
+  display: inline-block;
+  min-width: 145px;
+  min-height: 38px;
+}
+.filter-button fourth {
+  display: inline-block;
+  min-width: 103px;
+  min-height: 38px;
+}
+.filter-button fifth {
+  display: inline-block;
+  min-width: 130px;
+  min-height: 38px;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -112,7 +169,14 @@ body {
   background: var(--accent-color);
 }
 /* hero section */
+.hero {
+  text-align: center;
+}
 .hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  width: 696px;
+  min-height: 120px;
   color: var(--section-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -133,12 +197,16 @@ body {
 }
 /* professional qualities */
 .section-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 .section-depict {
+  margin-top: 0px;
+  margin-bottom: 94px;
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.7;
