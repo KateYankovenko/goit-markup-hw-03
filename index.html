@@ -14,38 +14,38 @@
   <body>
     <!--Шапка страницы-->
     <header>
-      <nav class="site-nav">
-        <a href="./index.html" class="logo"
-          >Web<span class="logo-accent">Studio</span></a
+      <div class="container">
+        <nav class="site-nav">
+          <a href="./index.html" class="logo"
+            >Web<span class="logo-accent">Studio</span></a
+          >
+          <ul class="list">
+            <li><a href="" class="link current">Студия</a></li>
+            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li><a href="" class="link">Контакты</a></li>
+          </ul>
+        </nav>
+        <a href="mailto:info@devstudio.com" class="contact-header"
+          >info@devstudio.com</a
         >
-
-        <ul class="list">
-          <li><a href="" class="link current">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
-        </ul>
-      </nav>
-      <a href="mailto:info@devstudio.com" class="contact-header"
-        >info@devstudio.com</a
-      >
-      <a href="tel:+380961111111" class="contact-header">+38 096 111 11 11</a>
+        <a href="tel:+380961111111" class="contact-header">+38 096 111 11 11</a>
+      </div>
     </header>
 
-    <div class="container"></div>
-    <main>
-      <!--Блок-герой-->
-      <div class="hero">
-        <section>
-          <h1 class="hero-title">
-            Эффективные решения <br />
-            для вашего бизнеса
-          </h1>
-          <button type="button" class="button">Заказать услугу</button>
-        </section>
-      </div>
-      <!--Перечисление профессиональных качеств-->
-      <section class="section">
-        <div class="container">
+    <div class="container">
+      <main>
+        <!--Блок-герой-->
+        <div class="hero">
+          <section>
+            <h1 class="hero-title">
+              Эффективные решения <br />
+              для вашего бизнеса
+            </h1>
+            <button type="button" class="button">Заказать услугу</button>
+          </section>
+        </div>
+        <!--Перечисление профессиональных качеств-->
+        <section class="section">
           <h2 hidden class="section-hdr">Features list</h2>
           <ul class="list">
             <li>
@@ -77,78 +77,86 @@
               </p>
             </li>
           </ul>
-        </div>
-      </section>
-      <!--Деятельность студии-->
-      <section class="section">
-        <h2 class="section-hdr">Чем мы занимаемся</h2>
-        <ul class="list">
-          <li>
-            <img
-              src="./images/img0_1.jpg"
-              width="370"
-              alt="Написание програмного кода с помощью алгоритма блок-схемы"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/img1_1.jpg"
-              width="370"
-              alt="Подбор нескольких вариантов оформления контента для сматфона."
-            />
-          </li>
-          <li>
-            <img
-              src="./images/img2_1.jpg"
-              width="370"
-              alt="Диаграмма разных цветовых оттенков в виде пчелиной соты."
-            />
-          </li>
-        </ul>
-      </section>
-      <!--Команда студии-->
-      <section class="section-cmd">
-        <h2 class="section-hdr">Наша команда</h2>
-        <ul class="list">
-          <li>
-            <img src="./images/img-p1.jpg" width="270" alt="Product Designer" />
-            <h3 class="team">Игорь Демьяненко</h3>
-            <p class="team-item">Product Designer</p>
-          </li>
-          <li>
-            <img
-              src="./images/img-p2.jpg"
-              width="270"
-              alt="Frontend Developer"
-            />
-            <h3 class="team">Ольга Репина</h3>
-            <p class="team-item">Frontend Developer</p>
-          </li>
-          <li>
-            <img src="./images/img-p3.jpg" width="270" alt="Marketing" />
-            <h3 class="team">Николай Тарасов</h3>
-            <p class="team-item">Marketing</p>
-          </li>
-          <li>
-            <img src="./images/img-p4.jpg" width="270" alt="UI Designer" />
-            <h3 class="team">Михаил Ермаков</h3>
-            <p class="team-item">UI Designer</p>
-          </li>
-        </ul>
-      </section>
-    </main>
+        </section>
+        <!--Деятельность студии-->
+        <section class="section">
+          <h2 class="section-hdr">Чем мы занимаемся</h2>
+          <ul class="list">
+            <li>
+              <img
+                src="./images/img0_1.jpg"
+                width="370"
+                alt="Написание програмного кода с помощью алгоритма блок-схемы"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/img1_1.jpg"
+                width="370"
+                alt="Подбор нескольких вариантов оформления контента для сматфона."
+              />
+            </li>
+            <li>
+              <img
+                src="./images/img2_1.jpg"
+                width="370"
+                alt="Диаграмма разных цветовых оттенков в виде пчелиной соты."
+              />
+            </li>
+          </ul>
+        </section>
+        <!--Команда студии-->
+        <section class="section-cmd">
+          <h2 class="section-hdr">Наша команда</h2>
+          <ul class="list">
+            <li>
+              <img
+                src="./images/img-p1.jpg"
+                width="270"
+                alt="Product Designer"
+              />
+              <h3 class="team">Игорь Демьяненко</h3>
+              <p class="team-item">Product Designer</p>
+            </li>
+            <li>
+              <img
+                src="./images/img-p2.jpg"
+                width="270"
+                alt="Frontend Developer"
+              />
+              <h3 class="team">Ольга Репина</h3>
+              <p class="team-item">Frontend Developer</p>
+            </li>
+            <li>
+              <img src="./images/img-p3.jpg" width="270" alt="Marketing" />
+              <h3 class="team">Николай Тарасов</h3>
+              <p class="team-item">Marketing</p>
+            </li>
+            <li>
+              <img src="./images/img-p4.jpg" width="270" alt="UI Designer" />
+              <h3 class="team">Михаил Ермаков</h3>
+              <p class="team-item">UI Designer</p>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
     <!--Подвал страницы-->
     <footer class="footer">
-      <a href="./index.html" class="logo"
-        >Web<span class="logo-ft-accent">Studio</span></a
-      >
-      <address>
-        <p class="footer-addr">г. Киев, пр-т Леси Украинки, 26</p>
-        <a href="mailto:info@example.com" class="contact-footer"
-          >info@example.com</a
+      <div class="container">
+        <a href="./index.html" class="logo"
+          >Web<span class="logo-ft-accent">Studio</span></a
         >
-        <a href="tel:+380991111111" class="contact-footer">+38 099 111 11 11</a>
-      </address>
+        <address>
+          <p class="footer-addr">г. Киев, пр-т Леси Украинки, 26</p>
+          <a href="mailto:info@example.com" class="contact-footer"
+            >info@example.com</a
+          >
+          <a href="tel:+380991111111" class="contact-footer"
+            >+38 099 111 11 11</a
+          >
+        </address>
+      </div>
     </footer>
   </body>
 </html>
