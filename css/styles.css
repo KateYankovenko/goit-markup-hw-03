@@ -112,6 +112,7 @@ body {
   padding: 10px 32px;
   width: 200px;
   min-height: 50px;
+  margin-top: 0px;
   margin-bottom: 200px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--section-text-color);
@@ -181,12 +182,19 @@ body {
 .hero {
   margin-top: 0px;
   margin-bottom: 0px;
+  /* width: 1600px;
+  height: 600px; */
   text-align: center;
 }
 .hero-title {
+  /* display: inline-block; */
+  padding-top: 200px;
+  /* padding-right: 452px;
+  padding-left: 452px; */
+  margin-top: 0px;
   margin-bottom: 30px;
-  width: 696px;
-  min-height: 120px;
+  /* width: 696px;
+  min-height: 120px; */
   color: var(--section-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -199,8 +207,22 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  width: 1170px;
   background: var(--first-section-color);
+}
+.section-features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  /* background: var(--first-section-color); */
+}
+.section-occupation {
+  padding-top: 0px;
+  padding-bottom: 94px;
+  background: var(--first-section-color);
+}
+.section-comand {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background: var(--second-section-color);
 }
 .section-hdr {
   margin-top: 0px;
@@ -227,11 +249,7 @@ body {
   line-height: 1.7;
 }
 /* studio team */
-.section-cmd {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  background: var(--second-section-color);
-}
+
 .team {
   font-weight: 500;
   font-size: 16px;
