@@ -13,21 +13,23 @@
 
   <body>
     <!--Шапка страницы-->
-    <header class="container">
-      <nav class="site-nav">
-        <a href="./index.html" class="logo"
-          >Web<span class="logo-accent">Studio</span></a
+    <header class="header">
+      <div class="container">
+        <nav class="site-nav">
+          <a href="./index.html" class="logo"
+            >Web<span class="logo-accent">Studio</span></a
+          >
+          <ul class="list">
+            <li><a href="" class="link current">Студия</a></li>
+            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li><a href="" class="link">Контакты</a></li>
+          </ul>
+        </nav>
+        <a href="mailto:info@devstudio.com" class="contact-header"
+          >info@devstudio.com</a
         >
-        <ul class="list">
-          <li><a href="" class="link current">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
-        </ul>
-      </nav>
-      <a href="mailto:info@devstudio.com" class="contact-header"
-        >info@devstudio.com</a
-      >
-      <a href="tel:+380961111111" class="contact-header">+38 096 111 11 11</a>
+        <a href="tel:+380961111111" class="contact-header">+38 096 111 11 11</a>
+      </div>
     </header>
 
     <main>
@@ -113,7 +115,7 @@
         <div class="container">
           <h2 class="section-hdr">Наша команда</h2>
           <ul class="list">
-            <li>
+            <li class="card">
               <img
                 src="./images/img-p1.jpg"
                 width="270"
@@ -122,7 +124,7 @@
               <h3 class="team">Игорь Демьяненко</h3>
               <p class="team-item">Product Designer</p>
             </li>
-            <li>
+            <li class="card">
               <img
                 src="./images/img-p2.jpg"
                 width="270"
@@ -131,12 +133,12 @@
               <h3 class="team">Ольга Репина</h3>
               <p class="team-item">Frontend Developer</p>
             </li>
-            <li>
+            <li class="card">
               <img src="./images/img-p3.jpg" width="270" alt="Marketing" />
               <h3 class="team">Николай Тарасов</h3>
               <p class="team-item">Marketing</p>
             </li>
-            <li>
+            <li class="card">
               <img src="./images/img-p4.jpg" width="270" alt="UI Designer" />
               <h3 class="team">Михаил Ермаков</h3>
               <p class="team-item">UI Designer</p>
