@@ -32,12 +32,17 @@ body {
 }
 /* main container features, content block centralization */
 .container {
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   outline: 2px solid red;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 /* common style for all lists */
 .list {
@@ -320,20 +325,25 @@ body {
   min-height: 404px;
   margin-top: 0px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
   background-color: var(--section-text-color);
 }
 .project > a {
   text-decoration: none;
 }
 .image {
+  display: block;
+  /* padding-top: 0px;
+  padding-bottom: 20px; */
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   text-decoration: none;
 }
 .image-hdr {
+  padding-top: 20px;
   margin-top: 0px;
   margin-bottom: 4px;
+  width: 322px;
+  min-height: 36px;
   color: var(--main-text-color);
   font-weight: 900;
   font-size: 18px;
@@ -345,9 +355,17 @@ body {
   padding-bottom: 20px;
   margin-top: 0px;
   margin-bottom: 0px;
+  width: 322px;
+  min-height: 30px;
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.87;
+}
+/* sets lower border for project element */
+.project-img {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 /*main text color #212121*/
