@@ -29,13 +29,13 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
-/* main container features */
+/* main container features, content block centralization */
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1230px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: 2px solid red;
 }
 /* common style for all lists */
@@ -110,7 +110,7 @@ body {
   display: inline-block;
   border-radius: 4px;
   padding: 10px 32px;
-  width: 200px;
+  min-width: 200px;
   min-height: 50px;
   margin-top: 0px;
   margin-bottom: 200px;
@@ -155,23 +155,28 @@ body {
 /* all filter-buttons one by one */
 .filter-button first {
   display: inline-block;
-  width: 73px;
+  min-width: 73px;
+  min-height: 38px;
 }
 .filter-button second {
   display: inline-block;
-  width: 128px;
+  min-width: 128px;
+  min-height: 38px;
 }
 .filter-button third {
   display: inline-block;
-  width: 145px;
+  min-width: 145px;
+  min-height: 38px;
 }
 .filter-button fourth {
   display: inline-block;
-  width: 103px;
+  min-width: 103px;
+  min-height: 38px;
 }
 .filter-button fifth {
   display: inline-block;
-  width: 130px;
+  min-width: 130px;
+  min-height: 38px;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -187,7 +192,6 @@ body {
   text-align: center;
 }
 .hero-title {
-  /* display: inline-block; */
   padding-top: 200px;
   /* padding-right: 452px;
   padding-left: 452px; */
@@ -203,13 +207,13 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-/* bcg for first section */
+/* page sections */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
   background: var(--first-section-color);
 }
-.section-features {
+.section features {
   padding-top: 94px;
   padding-bottom: 94px;
   /* background: var(--first-section-color); */
@@ -232,6 +236,11 @@ body {
   line-height: 1.17;
   text-align: center;
 }
+
+/* .section-hdr cmd {
+  padding-top: 94px;
+  padding-bottom: 0px;
+} */
 /* professional qualities */
 .section-title {
   margin-top: 0px;
