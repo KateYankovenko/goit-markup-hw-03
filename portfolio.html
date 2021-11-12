@@ -14,31 +14,42 @@
   <body>
     <!--Шапка страницы-->
     <header class="header">
-      <div class="container">
-        <nav class="site-nav">
-          <a href="./index.html" class="logo"
-            >Web<span class="logo-accent">Studio</span></a
-          >
-          <ul class="list">
-            <li><a href="./index.html" class="link">Студия</a></li>
-            <li>
+      <div class="container main-nav">
+        <a href="./index.html" class="logo"
+          >Web<span class="logo-accent">Studio</span></a
+        >
+        <nav>
+          <ul class="site-nav list">
+            <li class="list-item">
+              <a href="./index.html" class="link">Студия</a>
+            </li>
+            <li class="list-item">
               <a href="" class="link current">Портфолио</a>
             </li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="list-item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
-        <a href="mailto:info@devstudio.com" class="contact-header"
-          >info@devstudio.com</a
-        >
-        <a href="tel:+380961111111" class="contact-header">+38 096 111 11 11</a>
+        <ul class="contact">
+          <li class="contact-item">
+            <a href="mailto:info@devstudio.com" class="contact-header"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contact-item">
+            <a href="tel:+380961111111" class="contact-header"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
+
     <!--Страница портфолио-->
     <main>
       <!--Фильтр с кнопками-->
-      <section class="portfolio">
-        <div class="container">
-          <ul class="list filter">
+      <section>
+        <div class="container portfolio">
+          <ul class="filter list">
             <li>
               <button type="button" class="filter-button first">Все</button>
             </li>
@@ -61,8 +72,9 @@
               </button>
             </li>
           </ul>
+
           <!--Представленные проэкты-->
-          <ul class="list">
+          <ul class="portfolio-projects list">
             <li class="project">
               <a href="">
                 <img

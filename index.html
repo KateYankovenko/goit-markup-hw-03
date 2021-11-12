@@ -14,21 +14,33 @@
   <body>
     <!--Шапка страницы-->
     <header class="header">
-      <div class="container">
-        <nav class="site-nav">
-          <a href="./index.html" class="logo"
-            >Web<span class="logo-accent">Studio</span></a
-          >
-          <ul class="list">
-            <li><a href="" class="link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+      <div class="container main-nav">
+        <a href="./index.html" class="logo"
+          >Web<span class="logo-accent">Studio</span></a
+        >
+        <nav>
+          <ul class="site-nav list">
+            <li class="list-item">
+              <a href="" class="link current">Студия</a>
+            </li>
+            <li class="list-item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="list-item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
-        <a href="mailto:info@devstudio.com" class="contact-header"
-          >info@devstudio.com</a
-        >
-        <a href="tel:+380961111111" class="contact-header">+38 096 111 11 11</a>
+        <ul class="contact">
+          <li class="contact-item">
+            <a href="mailto:info@devstudio.com" class="contact-header"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contact-item">
+            <a href="tel:+380961111111" class="contact-header"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -45,33 +57,34 @@
           </div>
         </section>
       </div>
+
       <!--Перечисление профессиональных качеств-->
       <section class="section features">
         <div class="container">
-          <h2 hidden class="section-hdr">Features list</h2>
-          <ul class="list">
-            <li>
+          <h2 class="visually-hidden">Features list</h2>
+          <ul class="preferences list">
+            <li class="pref-item">
               <h3 class="section-title">Внимание к деталям</h3>
               <p class="section-depict">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="pref-item">
               <h3 class="section-title">Пунктуальность</h3>
               <p class="section-depict">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="pref-item">
               <h3 class="section-title">Планирование</h3>
               <p class="section-depict">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="pref-item">
               <h3 class="section-title">Современные технологии</h3>
               <p class="section-depict">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -81,27 +94,31 @@
           </ul>
         </div>
       </section>
+
       <!--Деятельность студии-->
       <section class="section-occupation">
         <div class="container">
           <h2 class="section-hdr">Чем мы занимаемся</h2>
-          <ul class="list">
-            <li>
+          <ul class="occupation list">
+            <li class="occupation-item">
               <img
+                class="occ-img"
                 src="./images/img0_1.jpg"
                 width="370"
                 alt="Написание програмного кода с помощью алгоритма блок-схемы"
               />
             </li>
-            <li>
+            <li class="occupation-item">
               <img
+                class="occ-img"
                 src="./images/img1_1.jpg"
                 width="370"
                 alt="Подбор нескольких вариантов оформления контента для сматфона."
               />
             </li>
-            <li>
+            <li class="occupation-item">
               <img
+                class="occ-img"
                 src="./images/img2_1.jpg"
                 width="370"
                 alt="Диаграмма разных цветовых оттенков в виде пчелиной соты."
@@ -110,11 +127,12 @@
           </ul>
         </div>
       </section>
+
       <!--Команда студии-->
-      <section class="section-comand">
+      <section class="section-band">
         <div class="container">
           <h2 class="section-hdr">Наша команда</h2>
-          <ul class="list">
+          <ul class="band list">
             <li class="card">
               <img
                 src="./images/img-p1.jpg"
@@ -147,13 +165,14 @@
         </div>
       </section>
     </main>
+
     <!--Подвал страницы-->
     <footer class="footer">
       <div class="container">
         <a href="./index.html" class="logo"
           >Web<span class="logo-ft-accent">Studio</span></a
         >
-        <address>
+        <address class="footer-info">
           <p class="footer-addr">г. Киев, пр-т Леси Украинки, 26</p>
           <a href="mailto:info@example.com" class="contact-footer"
             >info@example.com</a
