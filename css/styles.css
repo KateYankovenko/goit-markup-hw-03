@@ -1,4 +1,4 @@
-/* declaration of main colors */
+/* main colors */
 :root {
   --main-text-color: #212121;
   --secondary-text-color: #757575;
@@ -56,7 +56,7 @@ img {
 }
 /* header border line */
 .header {
-  border: 1px solid var(--header-brd-line-color);
+  border-bottom: 1px solid var(--header-brd-line-color);
   background-color: var(--first-section-color);
 }
 .main-nav {
@@ -145,7 +145,6 @@ img {
   display: inline-block;
   border-radius: 4px;
   padding: 10px 32px;
-  width: 200px;
   min-height: 50px;
   margin-top: 0px;
   margin-bottom: 200px;
@@ -153,7 +152,7 @@ img {
   color: var(--section-text-color);
   background: var(--accent-color);
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -171,7 +170,7 @@ img {
   display: flex;
   justify-content: space-between;
   padding-top: 0px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
   width: 611px;
@@ -179,7 +178,6 @@ img {
 .filter-button {
   box-sizing: inherit;
   margin-top: 0px;
-  margin-bottom: 16px;
   background: var(--filter-button-color);
   color: inherit;
   font-family: inherit;
@@ -226,6 +224,8 @@ img {
 .hero {
   margin-top: 0px;
   margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 94px;
   text-align: center;
 }
 .hero-title {
@@ -246,6 +246,12 @@ img {
   padding-bottom: 94px;
   background: var(--first-section-color);
 }
+.features {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
 .preferences {
   display: flex;
 }
@@ -255,9 +261,11 @@ img {
   width: 270px;
 }
 .preferences .pref-item:not(:last-child) {
-  margin-right: 30pt;
+  margin-right: 30px;
 }
 .section-occupation {
+  margin-top: 0px;
+  margin-bottom: 0px;
   padding-top: 0px;
   padding-bottom: 94px;
   background: var(--first-section-color);
@@ -273,7 +281,9 @@ img {
 }
 /* studio band */
 .section-band {
-  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 94px;
   padding-bottom: 0px;
   background: var(--second-section-color);
 }
@@ -284,6 +294,10 @@ img {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+}
+.cmd {
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
 .band {
   display: flex;
@@ -336,9 +350,12 @@ img {
   padding-top: 0px;
   padding-bottom: 0px;
   margin-top: 0px;
-  margin-bottom: 30px;
 }
 .team {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.team-member {
   margin-top: 0px;
   margin-bottom: 10px;
   font-weight: 500;
@@ -347,27 +364,28 @@ img {
   text-align: center;
 }
 .team-item {
-  margin-top: 0px;
-  margin-bottom: 30px;
+  /* margin-top: 0px;
+  margin-bottom: 30px; */
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
-.hero,
+.hero-block,
 .footer {
   background: var(--section-color);
+}
+.footer {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .logo-footer {
   margin-top: 0px;
   margin-bottom: 20px;
-  padding-top: 60px;
-  padding-bottom: 0px;
 }
 .footer-info {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 60px;
   width: 231px;
   min-height: 81px;
 }
@@ -420,14 +438,12 @@ img {
   width: 322px;
   min-height: 36px;
   color: var(--main-text-color);
-  font-weight: 900;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .image-depict {
-  padding-top: 0px;
-  padding-bottom: 20px;
   margin-top: 0px;
   margin-bottom: 0px;
   width: 322px;
