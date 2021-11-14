@@ -383,8 +383,6 @@ img {
 
 /* portfolio page */
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: var(--first-section-color);
 }
 .portfolio-projects {
