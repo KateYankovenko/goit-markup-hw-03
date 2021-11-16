@@ -400,6 +400,7 @@ img {
   margin-top: var(--card-progects-gap);
 }
 .project {
+  display: block;
   background-color: var(--section-text-color);
 }
 /* .project:not(:nth-last-child(-n + 3)) {
